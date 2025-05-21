@@ -2,6 +2,7 @@ import os
 import sys
 import certifi
 from dotenv import load_dotenv
+import uvicorn 
 
 from fastapi import FastAPI, Response, File, UploadFile, Request
 from fastapi.middleware.cors import CORSMiddleware

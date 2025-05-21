@@ -42,17 +42,6 @@ class TrainingPipeline:
         except Exception as e:
             raise SensorException(e, sys)
 
-    # class TrainingPipeline:
-
-    #     is_pipeline_running = False
-
-    #     def __init__(self, training_pipeline_config: TrainingPipelineConfig):
-    #         try:
-    #             self.training_pipeline_config = training_pipeline_config
-    #             self.s3_sync = S3Sync()
-    #         except Exception as e:
-    #             raise SensorException(e, sys)
-
 
 
     def start_data_ingestion(self)->DataIngestionArtifact:
